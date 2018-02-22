@@ -1,0 +1,18 @@
+doctype html
+html(lan="en")
+	head
+		include metas.jade
+		include styles.jade
+		include fonts.jade
+         
+		block title
+
+	body.fixed-nav.sticky-footer.bg-dark#page-top
+		
+		include navbar.jade
+		//Content-wrapper
+		.content-wrapper
+			block content
+		
+
+		include scripts.jade

@@ -1,0 +1,53 @@
+//Nav
+nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+  a.navbar-brand(href='index.html') Admin
+  button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarResponsive.collapse.navbar-collapse
+    ul#exampleAccordion.navbar-nav.navbar-sidenav
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Dashboard')
+        a.nav-link(href='index.html')
+          i.fa.fa-fw.fa-dashboard
+          span.nav-link-text Dashboard
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Components')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-wrench
+          span.nav-link-text Components
+        ul#collapseComponents.sidenav-second-level.collapse
+          li
+            a(href='navbar.html') Navbar
+          li
+            a(href='cards.html') Cards
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Menu Levels')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseMulti', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-sitemap
+          span.nav-link-text Menu Levels
+        ul#collapseMulti.sidenav-second-level.collapse
+          li
+            a(href='#') Second Level Item
+          li
+            a(href='#') Second Level Item
+          li
+            a(href='#') Second Level Item
+          li
+            a.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseMulti2') Third Level
+            ul#collapseMulti2.sidenav-third-level.collapse
+              li
+                a(href='#') Third Level Item
+              li
+                a(href='#') Third Level Item
+              li
+                a(href='#') Third Level Item
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Link')
+        a.nav-link(href='#')
+          i.fa.fa-fw.fa-link
+          span.nav-link-text Link
+    ul.navbar-nav.sidenav-toggler
+      li.nav-item
+        a#sidenavToggler.nav-link.text-center
+          i.fa.fa-fw.fa-angle-left
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        a.nav-link(data-toggle='modal', data-target='#exampleModal')
+          i.fa.fa-fw.fa-sign-out
+          | Login
