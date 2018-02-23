@@ -1,0 +1,24 @@
+//List
+table.table
+  thead
+    tr
+      th(scope='col') #
+      th(scope='col') First
+      th(scope='col') Last
+      th(scope='col') Handle
+      th(scope='col')  details
+      th(scope='col')  edit
+      th(scope='col')  delete
+  tbody
+   -for(var x=1;x<=10;x++)
+    tr
+     th(scope='row')= x
+     td= 'First' + x
+     td= 'Last' + x
+     td= 'Handle' + x
+     td(scope='col'): a(href="#")  details
+     td(scope='col'): a(href="#")  edit
+     td(scope='col'): a(href="#")  delete
+
+	
+		

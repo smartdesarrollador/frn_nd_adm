@@ -1,0 +1,13 @@
+extends ./layout/layout.jade
+
+block title
+	title index
+
+block content
+	.container
+		.row
+			.col-md-12
+				include parts/search.jade
+				include parts/breadcrumb.jade
+				include parts/crud/details.jade
+				
