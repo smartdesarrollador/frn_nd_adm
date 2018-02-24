@@ -10,15 +10,17 @@ table.table
       th(scope='col')  edit
       th(scope='col')  delete
   tbody
-   -for(var x=1;x<=10;x++)
+   -for(var x=1;x<=5;x++)
     tr
      th(scope='row')= x
      td= 'First' + x
      td= 'Last' + x
      td= 'Handle' + x
-     td(scope='col'): a(href="#")  details
-     td(scope='col'): a(href="#")  edit
-     td(scope='col'): a(href="#")  delete
+     td(scope='col'): a(href="detail.html")  details
+     td(scope='col'): a(href="edit.html")  edit
+     td(scope='col'): a(href="delete.html")  delete
+  tr
+    td(scope='col'): a.btn.btn-primary.text-white(href="http://localhost:3000/create.html")  create
 
 	
 		
