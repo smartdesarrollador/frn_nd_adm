@@ -1,12 +1,15 @@
 //Form Create
-form
+form.mb-5
 	.form-group
 		label Title
 		input.form-control(type="text",placeholder="Title")
 	.form-group
+		label Description
+		textarea#trumbowyg-demo.form-control(rows="3",placeholder="Balabala", autofocus)
+	.form-group
 		label Autor
 		input.form-control(type="text",placeholder="Autor")
 	.form-group
-		label Description
-		textarea#trumbowyg-demo.form-control(rows="3",placeholder="Balabala", autofocus)
+		label Imagen
+		input.form-control-file(type="file")
 	button.btn.btn-primary(type="submit") Guardar 
